@@ -111,13 +111,13 @@
         static func createLogFile(fileName : String){
             let path = selfFilePath.appending("/").appending(fileName).appending(".text")
             print(path)
-
-            do {
-                try  FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
-                
-            } catch _ as NSError {
-                
-            }
+            FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
+//            do {
+//                try  FileManager.default.createFile(atPath: path, contents: nil, attributes: nil)
+//                
+//            } catch _ as NSError {
+//                
+//            }
         }
         
         static func deleteFile(filePath : String) {
