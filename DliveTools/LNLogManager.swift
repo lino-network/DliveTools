@@ -11,7 +11,7 @@
     let latestLogFile = "latest"
     let previousLogFile = "previous"
     var writeTimes  = 0;
-    class LNLogManager: NSObject {
+open class LNLogManager: NSObject {
         
         //    #MARK: ----------------Log writing uses an external interface
         static  func log(msg : String , file : String = #file,line :Int = #line ,funcs : String = #function) {
